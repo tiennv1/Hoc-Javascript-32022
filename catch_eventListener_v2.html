@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Chọn xe trong danh sách</p>
+<select id="mySelect">
+    <option value="Audi">Audi</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="BMV">BMW</option>
+    <option value="Volvo">Volvo</option>
+</select>
+</body>
+</html>
+<script>
+    let selectedElement = document.getElementById('mySelect');
+    selectedElement.addEventListener("change", changeFunction);
+
+    function changeFunction() {
+        let selectedValue = document.getElementById('mySelect').value;
+        alert(selectedValue);
+    }
+</script>

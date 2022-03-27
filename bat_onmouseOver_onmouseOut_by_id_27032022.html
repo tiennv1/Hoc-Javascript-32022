@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p onmouseover="mouseover()" onmouseout="mouseout()" id="todo">This is a text</p>
+
+</body>
+</html>
+<script>
+    function mouseover() {
+        document.getElementById("todo").style.color = "red";
+    }
+    function mouseout() {
+        document.getElementById("todo").style.color = "black"
+    }
+</script>
